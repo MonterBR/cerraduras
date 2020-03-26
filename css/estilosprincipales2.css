@@ -1,0 +1,127 @@
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #33FFF6; /*se cambia el color de fondo*/
+    color: aliceblue;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+
+p{
+    margin-bottom: 1.6em;
+}
+/*menu*/
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #166BA2;
+    color: white;
+    padding: 2rem 0;
+
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-family: lucida calligraphy;
+    letter-spacing: 6px;
+    font-size: 1.4rem;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 0.5 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover{
+    background: #4a4a4a;
+}
+
+/*termina menu*/
+
+
+
+
+
+.footer{
+    background:#3A4C8C;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5 1rem;
+    }
+    .menu{
+        width: 100%
+    }
+
+    .menu ul{
+        display: none;
+    }
+
+    .menu ul.show{
+        display: block;
+    }
+
+    .menu ul li{
+        display: block;
+    }
+
+    .menu ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+
+    .menu ul li a:hover{
+        background: #4a4a4a;
+    }
+}

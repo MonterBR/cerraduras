@@ -1,0 +1,116 @@
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+body{
+    background: #F7B6E4; /*se cambia el color de fondo*/
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+/*menu*/
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #33FFF6;
+    color: white;
+    padding: 2rem 0;
+
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-family: lucida calligraphy;
+    letter-spacing: 6px;
+    font-size: 1.4rem;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 0.5 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover{
+    background: #4a4a4a;
+}
+
+/*termina menu*/
+#contenedor{
+    width: 960px;
+    max-width: 70%;
+    min-width: 30%; /*pocision del contenedor del titulo*/
+    margin: auto;
+    margin-top: 30px;/*margen con la parte superior*/
+    margin-bottom: 30px;
+   
+   overflow: hidden;
+}
+
+div.contenedor{
+   margin: 100px center;
+   margin-top: 15px;/*espaciado entre el titulo y las apis*/
+   width: 240px;/*tamaño del contenodr de las apis ancho*/
+   max-width: 70%;
+   min-width: 40%
+   height: 200px;/*tamaño del contenodr de las apis alto*/
+   float: left;/*pocicion de los contenedores apis*/
+   -webkit-transition: height .5s;
+}
+div.contenedor2{
+   margin: 100px center;
+   margin-top: 5rem;/*espaciado entre el titulo y las apis*/
+   width: 700px;/*tamaño del contenodr de las apis ancho*/
+   max-width: 70%;
+   min-width: 40%
+   height: 700px;/*tamaño del contenodr de las apis alto*/
+   float: center;/*pocicion de los contenedores apis*/
+   -webkit-transition: height .5s;
+
+}
+.footer{
+    background: #D688C0;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="whidht=device-whidt, user-scalable=no, initial-scale=1.0,
+maximum-scale=1.0,minium-scale=1.0">
+<STYLE>A {text-decoration: none;} </STYLE>
+<STYLE>A {color: white;} </STYLE>
+<!-- aqui se agregan los estilos -->
+<link rel="stylesheet" href="css/estilosprincipales.css">
+<link rel="stylesheet" href="css/estilored.css">
+<link rel="stylesheet" href="fuentes/style.css">
+<link rel="stylesheet" href="css/estiloproind.css">
+<link rel="shortcut icon" href="imagenes/logo.jpg">
+<script src="js/jquery-3.3.1.js" ></script>
+<script src="js/script.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141800747-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141800747-1');
+</script>
+
+
+</head>
+<body>
+<div class="responsive">
+<div class="social">
+
+    <ul>
+        <li><a href="https://www.facebook.com/Cerraduras-Inteligentes-Mon-House-106254557689765/" target="_blank" class="icon-facebook2"></a></li>
+        <li><a href="https://www.instagram.com/cerradurasmonhouse/" target="_blank" class="icon-instagram"></a></li>
+        <li><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox" class="icon-mail2"></a></li>    
+    </ul>
+</div> 
+
+<header class="header">
+    <div class="container logo-nav-container">
+        <a href="index.html" class="logo">Mon House</a>
+        
+    </div>
+</header>
+<title>Modelo Genis| Mon House</title>
+
+<div class="container" >
+        <img class="pictures" src="imagenes/ambo.jpg" width="350" height="600" id="img1">
+    </div>
+
+<section class="letrasacondionador">
+        <p><font color="black" face="Arial" size="6">
+                     <h5>Conectividad de 
+                      <br>Wifi y Bluetooth
+                      <br>Nueva Diseño
+                      <br>Cuenta con una combinacion de 
+                      <br>Digitos y Touch
+
+                            </h5></p>           
+    </div>
+    <br>
+    <br>
+      <br>
+    <br>
+   <a href="productos.html"><img src="imagenes/atras.ico"></a>
+<a href="#" class="btn btn-default producto" precio="5500" titulo="Modelo Genis"role="button""><img src="imagenes/cart.ico"></a>
+
+</section>
+
+</div>
+</div>
+</div>
+    <script src="minicart.js"></script>
+    <script>
+      // configuración inicial del carrito 
+      paypal.minicart.render({
+      strings:{
+        button:'Pagar'
+       ,buttonAlt: "Total"
+       ,subtotal: 'Total:'
+       ,empty: 'No hay productos en el carrito'
+      }
+      });
+      // Eventos para agregar productos al carrito
+      
+       $('.producto').click(function(e){
+           e.stopPropagation();
+            paypal.minicart.cart.add({
+            business: 'brayanmonterRM@hotmail.com', // Cuenta paypal para recibir el dinero
+            item_name: $(this).attr("titulo"),
+             amount: $(this).attr("precio"),
+             currency_code: 'MXN',
+            
+            });
+       });
+      
+    </script>
+
+</body>
+</div>
+</html>

@@ -1,0 +1,52 @@
+body{
+    background: #33FFF6;
+    font-family: Open-sans, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    margin-top: 7rem;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #166BA2;
+    color: white;
+    padding: 2rem 0;
+
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-family: lucida calligraphy;
+    letter-spacing: 8px;
+    font-size: 1.6rem;
+}
+
+
+
+#img1{
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 2px;
+}
